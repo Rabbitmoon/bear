@@ -44,14 +44,24 @@ li:last-child {
 	display: inline-block;
 }
 
-.nav-bar{	
-	
+.nav-bar {	
+	padding: 0px;
 }
 
-.nav-bar li a{
+.nav-bar li
+{
+	float: left;
+	padding: 0px;
+}
+
+
+.nav-bar li a
+{
+	display: block;
 	color: #fff;
 	text-decoration: none;
-
+	padding: 10px 20px;
+	border-left: 1px solid #fff;
 }
 
 .nav-bar li a:hover {

@@ -1,4 +1,8 @@
 
+.header-box
+{
+	padding: 10px 0px;
+}
 
 /*menu top header content*/
 ul{
@@ -12,6 +16,7 @@ ul{
 	background-color: #F1F1F1;
 	display: inline-block;
 	border-radius: 10px;
+	float: right;
 }
 
 .nav-top li{
@@ -37,11 +42,9 @@ li:last-child {
 
 /*menu bar*/
 .nav{
-	/*position: relative;
-    z-index: 9;*/
+
    
 	background-color: #9AC56A;
-	display: inline-block;
 }
 
 .nav-bar {	
@@ -73,4 +76,6 @@ body{
 	font-size: 14px;
     font-family: 'Arial';
     line-height: 25px;
+    margin: 0px;
+
 }

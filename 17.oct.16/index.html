@@ -3,7 +3,7 @@
 <head>
 	<title>Bear's Big Belly</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css?v=543543">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
@@ -25,17 +25,62 @@
 <div class="nav">
 	<ul class="nav-bar">
 		<li class="home-nav">
-			<a href="#">
-				<span><i class="fa fa-home" aria-hidden="true"></i></span>
-			</a>
+			<a href="#"><span><i class="fa fa-home" aria-hidden="true"></i></span></a>
 		</li>
 		<li><a href="#"> Tất cả</a></li>
 		<li><a href="#"> Hoa tươi</a></li>
 		<li><a href="#"> Hoa chậu</a></li>
 		<li><a href="#"> Bán chạy nhất</a></li>
 		<li><a href="#"> Dành cho doanh nghiệp</a></li>
-		<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-		<li><a href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+		<li class="nav-search">
+			<a href="#" class="link-search">
+				<span class="fa fa-search span-search" aria-hidden="true"></span>
+				<div class="search-content">
+					<input type="text" class="nav-search">
+					<button class="btn-search"><span class="fa fa-search" aria-hidden="true"></span></button>
+				</div>
+			</a>
+		</li>
+		<li class="dropdown">
+			<a href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+			<div class="cart-dropdown">
+				<div class="dropdown-content">
+					<div class="cart-body">
+						<div class="cart-item">
+							<div class="cart-item-img">
+								<img src="http://muahoaonline.com/media/catalog/product/cache/1/thumbnail/50x50/9df78eab33525d08d6e5fb8d27136e95/t/h/thu_hai_duong_chau_do_1.jpg">
+							</div>
+							<div class="cart-itme-info">
+								<a class="item-good-name" href="#">Thu hải đường yêu thương</a>
+								<strong>1</strong> &times; <span class="cart-item-price">200.000</span> đ
+							</div>
+							<div class="cart-item-button">
+								<a href=""><span class="fa fa-pencil"></span></a>
+								<a href=""><span class="fa fa-times-circle"></span></a>
+							</div>
+						</div> <!-- end cart item -->
+
+						<div class="cart-item">
+							<div class="cart-item-img">
+								<img src="http://muahoaonline.com/media/catalog/product/cache/1/thumbnail/120x/9df78eab33525d08d6e5fb8d27136e95/c/h/chi_c_h_p_b_m_t_xanh.jpg">
+							</div>
+							<div class="cart-itme-info">
+								<a class="item-good-name" href="#">Chiếc hộp bí ẩn 2</a>
+								<strong>2</strong> &times; <span class="cart-item-price">500.000</span> đ
+							</div>
+							<div class="cart-item-button">
+								<a href=""><span class="fa fa-pencil"></span></a>
+								<a href=""><span class="fa fa-times-circle"></span></a>
+							</div>
+						</div> <!-- end cart item -->
+					</div>
+					<span class="total-cart">Tổng cộng: 1.200.000 <span class="sub">đ</span></span>
+					<div class="action">
+						<button class="my-btn btn-success">Thanh toán</button>
+					</div>
+				</div>
+			</div>
+		</li>
 	</ul>
 </div>
 </div>

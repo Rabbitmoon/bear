@@ -28,7 +28,7 @@ li:last-child {
     border-right: none;
 }
   
- li a{
+ li > a{
  	display: block;
  	text-align: center;	
  	text-decoration: none;
@@ -49,15 +49,15 @@ li:last-child {
 	position: relative;
     z-index: 9;   
 	background-color: #9AC56A;
-	display: block;
+	display: flex;
 	padding-left: 120px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.nav-bar{	
-	
+ul.nav-bar{	
+	overflow: visible;	
 }
 
 .nav-bar li{
@@ -77,15 +77,16 @@ li:last-child {
 	display: block;
 }
 
-.nav-bar li a{
+.nav-bar li > a{
 	color: #fff;
-	padding: 5px 10px;
+	padding: 5px 20px;
 	text-transform: uppercase;
     font-size: 16px;
     line-height: 35px;
 }
 
-.nav-bar li a:hover {
+.nav-bar li > a:hover 
+{
 	background: #F68933;
 }
 
@@ -96,4 +97,213 @@ body{
     line-height: 25px;
     margin: 0px;
 
+}
+
+li.dropdown
+{
+	position: relative;
+}
+
+.cart-dropdown
+{
+	position: absolute;
+	background: #fff;
+	white-space: nowrap;
+	right: 0;
+	max-height: 0px;
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+	min-width: 350px;
+}
+
+.dropdown:hover .cart-dropdown
+{
+	max-height: 500px;
+}
+
+.dropdown-content
+{
+	padding: 20px;
+	border: 1px solid #9AC56A;
+	border-top: none;
+}
+
+.dropdown:hover > a:hover
+{
+	background: #FFF;
+	border-right-color: #9AC56A;
+	color: #A8DDD6;
+}
+
+.cart-dropdown span.cart-header
+{
+	padding: 8px;
+	display: block;
+	/*border-bottom: 1px solid #BBBBBB;*/
+}
+
+
+
+span.sup
+{
+	text-decoration: underline;
+    vertical-align: super;
+    font-size: 10px;
+}
+
+span.total-cart
+{
+	text-align: right;
+    display: block;	
+    border-top: 1px solid #333;
+    padding-top: 5px;
+}
+
+input.nav-search
+{
+	border: 1px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    height: 23px;
+    top: -19px;
+    right: 0px;
+    outline: none;
+    padding: 0px 10px;
+    width: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+
+a.link-search:hover {
+    background: none !important;
+}
+
+.search-content
+{
+	visibility: hidden;
+	display: inline-block;
+	position: relative;
+}
+
+.nav-search:hover .search-content 
+{
+	visibility: visible;
+}
+
+.nav-search:hover span.span-search
+{
+	visibility: hidden;
+}
+
+.nav-search:hover .search-content input.nav-search
+{
+	display: inline-block;
+    width: 200px;
+
+}
+
+.nav-search:hover button.btn-search
+{
+	color: #A8DDD6;
+}
+
+
+li.nav-search:hover
+{
+	background: none !important;
+}
+
+button.btn-search
+{
+	position: absolute;
+    top: -15px;
+    right: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button.btn-search:hover
+{
+	color: #A8DDD6;
+}
+
+.cart-item
+{
+	display: flex;
+	position: relative;
+	margin: 5px 0px;
+}
+
+.cart-item-img
+{
+	width: 51px;
+	float: left;
+}
+
+.cart-item-img img
+{
+	width: 100%;
+}
+
+.cart-itme-info
+{
+	width: 200px;
+	margin-left: 10px;
+}
+
+.cart-itme-info  a.item-good-name
+{
+	display: block;
+	text-decoration: none;
+	line-height: 16px;
+	color: #333;
+}
+
+.cart-item-button
+{
+	right: 0;
+	position: absolute;
+	top: 2px;
+    font-size: 16px;
+}
+
+.cart-item-button > a
+{
+	color: #999
+}
+
+.cart-item-button > a:hover
+{
+	color: #A8DDD6;
+}
+
+span.cart-item-price
+{
+	color: #018445;
+}
+
+.action
+{
+	display: block;
+	text-align: right;
+}
+
+button.my-btn
+{
+	padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+}
+
+button.btn-success
+{
+	background: #008752;
+}
+
+button.btn-success:hover
+{
+	background: #3E3D3E;
 }

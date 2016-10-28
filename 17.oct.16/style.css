@@ -89,6 +89,27 @@ li:last-child {
 	background: #F68933;
 }
 
+.top-cart-wrapper{
+	position: relative;
+	width: 50px;
+	display: inline-block;
+	float: left;
+	background: #fff;
+}
+.top-cart-content{
+display: none;
+position: absolute;
+right: 0;
+background: #fff;
+min-width: 100px;
+
+}
+
+.top-cart-wrapper:hover .top-cart-content{
+	background: #fff;
+	display: block;
+	
+}
 
 body{
 	font-size: 14px;

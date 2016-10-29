@@ -32,7 +32,7 @@
 }
 
 .current-location{
-	background: url(../img/location_icon_new_small.png) no-repeat 5px center;
+	background: url('./img/location_icon_new_small.png') no-repeat 5px center;
 	background-color: #fff;
 	color: #008752;
 	padding: 16px;
@@ -43,6 +43,7 @@
 }
 
 .content-location{
+
 	display: none;
 	position: absolute;
 	min-width: 150px;
@@ -50,6 +51,7 @@
 }
 
 .content-location a{
+	background: url('./img/location_icon_new_small.png') no-repeat 5px center;
 	text-decoration: none;
 	display: block;
 	color: #008752;

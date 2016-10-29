@@ -20,6 +20,49 @@
 	float: left;	
 }
 
+.top-link-left-text{
+
+}
+
+.top-link-left-location{
+   
+    padding: 2px 0 2px 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.current-location{
+	background: url(../img/location_icon_new_small.png) no-repeat 5px center;
+	background-color: #fff;
+	color: #008752;
+	padding: 16px;
+	border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.content-location{
+	display: none;
+	position: absolute;
+	min-width: 150px;
+
+}
+
+.content-location a{
+	text-decoration: none;
+	display: block;
+	color: #008752;
+}
+
+.content-location a:hover {
+	background-color: #CECECE;
+}
+
+.top-link-left-location:hover .content-location{
+	display: block;
+}
+
 .top-link-right{
 	float: right;
 }

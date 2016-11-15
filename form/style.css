@@ -1,0 +1,54 @@
+
+.form-comment{
+	border: 1px solid #000;
+	background: #F2F3F4;
+	width:630px;
+	font-family: "Courier";
+}
+
+.title{
+	background-color: #E7B44C;
+	color: #fff;
+	padding: 1px;
+    margin: 0px;
+}
+
+.title h4{
+	margin-left: 10px;
+}
+
+/*Gấu Bụng Bự dạy*/
+.content > label, input{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.content input{
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #000;
+	width: 300px;
+	height: 25px;
+}
+.content-message textarea{
+	outline: none;
+	background-color: #ddd;
+	border:none;
+	width:300px;
+	min-height: 30px;
+	overflow: auto;
+}
+.btnsubmit{
+	float: right;
+
+}
+
+.btnsubmit input{
+	background-color: #E7B44C;
+	color: #fff;
+	border: none;
+	margin-right: 50px;
+	width: 150px;
+	height: 30px;
+	font-size: 14pt;
+}

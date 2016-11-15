@@ -3,44 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <form method="post" class="form-comment">
-	<div class="title">
-		<h4>SEND US SOME ELECTRONIC MAIL</h4>
-	</div>
-	<div class="row">
-		<div class="error"></div>
-	</div>
-	<div class="row">
-		<div class="success"></div>
-	</div>
-	<div class="content">
+<div class="row">
+	<div class="error"></div>
+</div>
+<div class="row">
+	<div class="success"></div>
+</div>
+
+<div>
+	<h4>SEND US SOME ELECTRONIC MAIL</h4>
+</div>
+	<div>
 		<label> Your Name:</label>
 		<input type="text" name="yourname">
 	</div>
-	<div class="content">
+	<div>
 		<label>Company:</label>
 		<input type="text" name="Company">		
 	</div>
-	<div class="content">
+	<div>
 		<label>Email Adress:</label>
 		<input type="email" name="email">
 	</div>
-	<div class="content">
+	<div>
 		<label>Phone Number:</label>
-		<input type="text" name="Phone Number" min="00000000000" max="99999999999">
+		<input type="Number" name="Phone Number">
 	</div>
-	<div class="content">
+	<div>
 		<label>Location (city):</label>
 		<input type="text" name="City">
 	</div>
-	<div class="content-message">
+	<div>
 		<label>Message: </label>
 		<textarea name="Message" rows="10"></textarea>
 	</div>
-	<div class="btnsubmit">
+	<div>
 		<input type="submit" name="Send" value="Send">
 	</div>
 </form>	
